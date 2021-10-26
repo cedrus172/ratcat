@@ -60,3 +60,12 @@ button:hover{
     background-color: rgb(148, 222, 251);
     transition: 0.2s ease-in;
 }
+
+.live{
+    background-color: green;
+    color : white
+}
+.die{
+    background-color: red;
+    color : white
+}

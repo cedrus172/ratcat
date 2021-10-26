@@ -22,7 +22,7 @@ const addRatData = (rat) => {
                    <td>${rat.getWeight()}kg</td>
                    <td>${rat.getSpeed()}</td>
                    <td>${rat.whoCatch()}</td>
-                   <td>${rat.getLive()?'Sống':'Nghẻo'}</td>`;
+                   <td class='${rat.getLive() ? "live" : "die"}'' > ${rat.getLive() ? 'Sống' : 'Nghẻo'}</td > `;
 
     dataTableRat.appendChild(e);
 }

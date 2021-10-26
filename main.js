@@ -1,5 +1,7 @@
 var listCat = [];
 var listRat = [];
+var currentCatId = 0;
+var currentRatId = 0;
 const renderListCat = () => {
     dataTableCat.innerHTML = "";
     listCat.forEach((cat) => addCatData(cat))
@@ -15,6 +17,8 @@ const renderData = () => {
 }
 
 const clearAll = () => {
+    currentCatId = 0;
+    currentRatId = 0;
     listCat = [];
     listRat = [];
     renderData();
@@ -26,9 +30,10 @@ const createCat = (count) => {
         let randomWeight = Math.floor(Math.random() * 10) + 1;
         let randomSpeed = Math.floor(Math.random() * 5) + 1;
 
-        let cat = new Cat(i, "Cat " + i, randomWeight, randomSpeed);
+        let cat = new Cat(currentCatId, "Cat " + currentCatId, randomWeight, randomSpeed);
         cat.say("Meo meo");
         listCat.push(cat);
+        currentCatId++;
         i++;
     }
 
@@ -41,9 +46,10 @@ const createRat = (count) => {
         let randomWeight = Math.floor(Math.random() * 3) + 1;
         let randomSpeed = Math.floor(Math.random() * 5) + 1;
 
-        let rat = new Rat("Rat " + i, randomWeight, randomSpeed);
+        let rat = new Rat("Rat " + currentRatId, randomWeight, randomSpeed);
         rat.say("Chut chit");
         listRat.push(rat);
+        currentRatId++;
         i++;
     }
     console.log(listRat);

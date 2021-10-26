@@ -38,6 +38,8 @@ thead {
 
 input {
     border-radius: 1rem;
+    border: 1px solid;
+    padding:0.5rem;
 }
 
 button {
@@ -51,4 +53,9 @@ button {
 
 table{
     display : block;
+}
+
+button:hover{
+    background-color: rgb(148, 222, 251);
+    transition: 0.2s ease-in;
 }

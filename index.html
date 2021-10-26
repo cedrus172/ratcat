@@ -1,83 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<link rel="stylesheet" href="./style.css">
+  </head>
+  <link rel="stylesheet" href="./style.css" />
 
-<body>
+  <body>
     <div class="container">
-        <form action="" onSubmit="return false">
-            <div class="form-group">
-                <label for="countCatCreate">Số mèo cần tạo</label>
-                <input type="number" value="10" id="countCatCreate">
-                <button onClick="initCat();">Tạo ngay</button>
-
-            </div>
-            <div class="form-group">
-                <label for="countRatCreate">Số chuột cần tạo</label>
-                <input type="number" value="10" id="countRatCreate">
-                <button onClick="initRat();">Tạo ngay</button>
-            </div>
-            <div class="form-group">
-                <label>Ra lệnh</label>
-                <button onClick="catchRat();">Bắt chuột</button>
-                <button onClick="eatRat();">Ăn chuột</button>
-                <button onClick="clearAll();">Quét sạch</button>
-
-            </div>
-
-        </form>
-        <div class="table">
-            <table>
-                <thead>
-                    <th>
-                        Tên Mèo
-                    </th>
-                    <th>
-                        Cân nặng
-                    </th>
-                    <th>
-                        Tốc độ
-                    </th>
-                    <th>
-                        Chuột bị bắt
-                    </th>
-                </thead>
-
-                <tbody id="dataTableCat">
-
-                </tbody>
-            </table>
-            <table>
-                <th>
-                    Tên Chuột
-                </th>
-                <th>
-                    Cân nặng
-                </th>
-                <th>
-                    Tốc độ
-                </th>
-                <th>
-                    Bị bắt bởi
-                </th>
-                <th>Tình trạng</th>
-                <tbody id="dataTableRat">
-
-                </tbody>
-            </table>
+      <form action="" onSubmit="return false">
+        <div class="form-group">
+          <label for="countCatCreate">Số mèo cần tạo</label>
+          <input type="number" value="10" id="countCatCreate" />
+          <button onClick="initCat();">Tạo ngay</button>
         </div>
+        <div class="form-group">
+          <label for="countRatCreate">Số chuột cần tạo</label>
+          <input type="number" value="10" id="countRatCreate" />
+          <button onClick="initRat();">Tạo ngay</button>
+        </div>
+        <div class="form-group">
+          <label>Ra lệnh</label>
+          <button onClick="catchRat();">Bắt chuột</button>
+          <button onClick="eatRat();">Ăn chuột</button>
+          <button onClick="clearAll();">Quét sạch</button>
+        </div>
+      </form>
+      <div class="table">
+        <table>
+          <thead>
+            <th>Tên Mèo</th>
+            <th>Cân nặng</th>
+            <th>Tốc độ</th>
+            <th>Chuột bị bắt</th>
+            <th>Số chuột đã ăn</th>
+            <th>Thao tác</th>
+          </thead>
 
+          <tbody id="dataTableCat"></tbody>
+        </table>
+        <table>
+          <th>Tên Chuột</th>
+          <th>Cân nặng</th>
+          <th>Tốc độ</th>
+          <th>Bị bắt bởi</th>
+          <th>Tình trạng</th>
+          <tbody id="dataTableRat"></tbody>
+        </table>
+      </div>
     </div>
     <script src="./function.js"></script>
     <script src="./Cat.js"></script>
     <script src="./Rat.js"></script>
     <script src="./main.js"></script>
-</body>
-
+  </body>
 </html>

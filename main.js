@@ -46,7 +46,7 @@ const createRat = (count) => {
         let randomWeight = Math.floor(Math.random() * 3) + 1;
         let randomSpeed = Math.floor(Math.random() * 5) + 1;
 
-        let rat = new Rat("Rat " + currentRatId, randomWeight, randomSpeed);
+        let rat = new Rat(currentRatId, "Rat " + currentRatId, randomWeight, randomSpeed);
         rat.say("Chut chit");
         listRat.push(rat);
         currentRatId++;

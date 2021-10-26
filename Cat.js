@@ -9,6 +9,8 @@ class Cat {
 
     getListRat() { return this.listRat.filter(a => a.getLive() == true); }
 
+    getId() { return this.id; }
+
     say(message) {
         console.log(`${this.name} : ${message}`);
     }

@@ -1,12 +1,15 @@
 class Rat {
-    constructor(name, weight, speed) {
+    constructor(id, name, weight, speed) {
         this.name = name;
         this.weight = weight;
         this.speed = speed;
         this.live = true;
         this.lock = false;
         this.catchBy = "";
+        this.id = id;
     }
+
+    getId() { return this.id; }
 
     whoCatch() { return this.catchBy; }
 

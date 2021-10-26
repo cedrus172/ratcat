@@ -25,6 +25,7 @@ tr {
 td,
 thead {
     border: 1px solid;
+    text-align: center;
 }
 
 .form-group {

@@ -1,7 +1,10 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
     background-color: black;
+}
+
+*{
     color : white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 table {
@@ -39,15 +42,14 @@ thead {
 }
 
 input {
-    font-family: 'Courier New', Courier, monospace;
     border-radius: 1rem;
     border: 1px solid;
     padding:0.5rem;
+    color: white;
+    background-color: black;
 }
 
 button {
-    font-family: 'Courier New', Courier, monospace;
-    color : white;
     margin-top: 10px;
     padding: 5px;
     background-color: rgb(122, 6, 25);

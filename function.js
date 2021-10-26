@@ -8,7 +8,7 @@ const addCatData = (cat) => {
         listNameRat.push(rat.getName());
     });
     e.id = "cat" + cat.getId();
-    e.innerHTML = `<td>${cat.getName()}</td>
+    e.innerHTML = `<td><img src='./assets/cat.png' width='20px' style='margin-top:-20px'>${cat.getName()}</td>
                    <td>${cat.getWeight()}kg</td>
                    <td>${cat.getSpeed()}</td>
                    <td>${listNameRat.join(',')}</td>
@@ -21,7 +21,7 @@ const addCatData = (cat) => {
 const addRatData = (rat) => {
     let e = document.createElement('tr');
     e.id = "rat" + rat.getId();
-    e.innerHTML = `<td>${rat.getName()}</td>
+    e.innerHTML = `<td><img src='./assets/rat.png' width='20px' style='margin-top:-20px'>${rat.getName()}</td>
                    <td>${rat.getWeight()}kg</td>
                    <td>${rat.getSpeed()}</td>
                    <td>${rat.whoCatch()}</td>

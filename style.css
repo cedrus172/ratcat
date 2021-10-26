@@ -46,4 +46,5 @@ button {
     background-color: rgb(255, 255, 255);
     border-radius: 1rem;
     border: 1px dotted red;
+    cursor: pointer;
 }

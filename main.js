@@ -1,3 +1,5 @@
+const countCatCreate = document.querySelector('#countCatCreate');
+const countRatCreate = document.querySelector('#countRatCreate');
 var listCat = [];
 var listRat = [];
 var currentCatId = 0;
@@ -86,15 +88,6 @@ const handleEatRat = (cat) => {
     })
 }
 
-/*
-createCat(10);
-createRat(20);
-
-catchRat();
-eatRat();
-renderListCat();*/
-const countCatCreate = document.querySelector('#countCatCreate');
-const countRatCreate = document.querySelector('#countRatCreate');
 
 const initCat = () => {
     let count = parseInt(countCatCreate.value);
